@@ -13,28 +13,26 @@
   <body>
   
     <main class="mx-5 text-center">
-            <section>
-                <div class="p-3" role="figure">
-                    <img id="poke-img" src="#" alt=""/>
-                    <p class="display-4" id="poke-name"></p>
-                </div>
-                <div id="poke-box"
-                    aria-live="assertive"
-                    aria-atomic="true"
-                    aria-labelledby="poke-name"
-                >
-                    <p id="poke-id"></p>
-                    <p id="poke-type1"></p>
-                    <p id="poke-type2"></p>
-                    <p id="poke-height"></p>
-                    <p id="poke-weight"> </p>
-                </div>
-                <form role="search" onsubmit="buttonSearch(event)">
-                    <input class="my-3" type=text id="poke-search" aria-label="Search for Pokemon by name or number" placeholder="Search Monsters">
-                    <button class="btn btn-primary" type="submit">Search the Dex</button>
-                </form>
-            </section>
-    </main>
+      <div class="p-3" role="figure">
+          <img id="poke-img" src="#" alt=""/>
+          <p class="display-4" id="poke-name"></p>
+      </div>
+      <div id="poke-box"
+          aria-live="assertive"
+          aria-atomic="true"
+          aria-labelledby="poke-name"
+      >
+          <p id="poke-id"></p>
+          <p id="poke-type1"></p>
+          <p id="poke-type2"></p>
+          <p id="poke-height"></p>
+          <p id="poke-weight"> </p>
+      </div>
+      <form role="search" onsubmit="buttonSearch(event)">
+          <input class="my-3" type=text id="poke-search" aria-label="Search for Pokemon by name or number" placeholder="Search Monsters">
+          <button class="btn btn-primary" type="submit">Search the Dex</button>
+      </form>
+      </main>
 
 
     <script src="script.js"></script>
