@@ -15,20 +15,22 @@
     <main class="mx-5">
         <div>
             <section>
-                <div class="p-3">
+                <div class="p-3" role="figure" aria-labelledby="poke-name">
                     <img id="poke-img" />
+                    <h2 id="poke-name"></h2>
                 </div>
                 <article id="poke-box" >
-                    <h2 id="poke-name"></h2>
+                    
                     <p id="poke-id"></p>
                     <p id="poke-type1"></p>
                     <p id="poke-type2"></p>
                     <p id="poke-height"></p>
                     <p id="poke-weight"> </p>
                 </article>
-
-                <input type=text id="poke-search" aria-label="Search for Pokemon by name or number" placeholder="Search Monsters">
-                <button class="btn btn-primary" onclick="buttonSearch()">Search the Dex</button>
+                <form role="search" onsubmit="buttonSearch(event)">
+                    <input type=text id="poke-search" aria-label="Search for Pokemon by name or number" placeholder="Search Monsters">
+                    <button class="btn btn-primary" type="submit">Search the Dex</button>
+                </form>
             </div>
         </div>
     </main>

@@ -1,3 +1,13 @@
+const buttonSearch = (event) => {
+    event.preventDefault()
+
+    let query = document.getElementById('poke-search').value.toLowerCase();
+
+    fetch(`https://pokeapi.co/api/v2/pokemon/${query}`)
+    .then(response => response.json())
+    .then(json => parseTheData(json));
+}
+
 const getMonsterData = () => {
 
     let randomPokemonNo = Math.floor(Math.random() * 251)
@@ -5,14 +15,6 @@ const getMonsterData = () => {
     fetch('https://pokeapi.co/api/v2/pokemon/'+randomPokemonNo)
         .then(response => response.json())
         .then(json => parseTheData(json));
-}
-
-const buttonSearch = () => {
-    let query = document.getElementById('poke-search').value.toLowerCase();
-
-    fetch(`https://pokeapi.co/api/v2/pokemon/${query}`)
-    .then(response => response.json())
-    .then(json => parseTheData(json));
 }
 
 const parseTheData = (data) => {
