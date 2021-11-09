@@ -54,4 +54,4 @@ const stuffTheHTML = (monsterData) => {
 
 getMonsterData()
 
-// window.setInterval(getMonsterData, 10000);
+window.setInterval(getMonsterData, 10000);
