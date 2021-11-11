@@ -1,0 +1,27 @@
+body { 
+    font-family: 'Abel', sans-serif;
+    
+    
+}
+
+.title-header {
+    position: absolute;
+    top: 85%;
+}
+
+.title-header::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform-origin: bottom;
+
+    transform: rotateX(180deg);
+    line-height: 0.85em;
+
+    background-image: linear-gradient(0deg, #000000, transparent 95%);
+    -webkit-background-clip: text;
+    color: transparent;         
+    opacity: 0.7;
+}
